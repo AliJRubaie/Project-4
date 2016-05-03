@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/off_white"
+
+    android:id="@+id/alreadyamemberid"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/imageView3"
+        android:layout_gravity="center_horizontal" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:hint="Email"
+        android:id="@+id/EmailID"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:textStyle="bold|normal|italic"
+        android:textIsSelectable="false"
+        android:backgroundTint="@android:color/black" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="Password"
+        android:id="@+id/PasswordId"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@android:color/black"
+        android:textStyle="bold|normal|italic" />
+    <Button
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:id="@+id/loginBT"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
+</LinearLayout>

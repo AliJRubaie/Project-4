@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/off_white"
+    android:id="@+id/activityy"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Email"
+        android:backgroundTint="@android:color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/emailID"
+        android:textStyle="bold|normal|italic" />
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Invitation"
+        android:id="@+id/REQ"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/emailID" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already a Member?"
+        android:id="@+id/CODE"
+        android:layout_below="@+id/REQ"
+        android:layout_alignEnd="@+id/REQ" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Sign Up"
+    android:id="@+id/MEM"
+    android:layout_below="@+id/CODE"
+    android:layout_alignEnd="@+id/CODE"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:id="@+id/fblogin"
+        android:background="@drawable/facebooklogin"
+        android:layout_below="@+id/MEM"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

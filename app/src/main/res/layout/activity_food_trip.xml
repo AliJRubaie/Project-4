@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/off_white">
+
+    <TableLayout
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:stretchColumns="1" >
+        <TableRow>
+            <TextView android:text="@string/label_name" />
+            <EditText
+                android:id="@+id/field_name"
+                android:inputType="textCapWords" />
+        </TableRow>
+        <TableRow>
+            <TextView android:text="@string/label_address" />
+            <EditText
+                android:id="@+id/field_address"
+                android:inputType="textCapWords" />
+        </TableRow>
+        <TableRow>
+            <TextView android:text="@string/label_type" />
+            <RadioGroup android:id="@+id/rgrp_types" >
+                <RadioButton
+                    android:id="@+id/rbtn_chartiy"
+                    android:text="@string/label_Charity" />
+
+                <RadioButton
+                    android:id="@+id/rbtn_nightlife"
+                    android:text= "@string/label_Nightlife" />
+                <RadioButton
+                    android:id="@+id/rbtn_parties"
+                    android:text="@string/label_Parties" />
+                <RadioButton
+                    android:id="@+id/rbtn_sport"
+                    android:text="@string/label_Sports" />
+                <RadioButton
+                    android:id="@+id/rbtn_kids"
+                    android:text="@string/label_Kids" />
+                <RadioButton
+                    android:id="@+id/rbtn_geeks"
+                    android:text="@string/label_Geeks" />
+            </RadioGroup>
+        </TableRow>
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_save" />
+    </TableLayout>
+    <ListView
+        android:id="@+id/restaurants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/details"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Map"
+        android:id="@+id/mapID"
+        android:layout_above="@+id/details"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
